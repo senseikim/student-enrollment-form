@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <header>
+          <h1>Student Enrollment Form</h1>
+     </header>
+
+
+     <section class="instructions">
+          <h3>Instructions</h3>
+          <ol>
+               <li>Fill the forms fields.</li>
+               <li>Check your interests.</li>
+               <li>Click "Enroll Now" to submit.</li>
+          </ol>
+     </section>
+  
+     </head>
+     <body>
+     
+         <form action="action_page.php" method="POST">
+     
+             <div>
+                 <label for="fname">Full Name:</label>
+                 <input type="text" id="fname" name="fname" placeholder="Full Name" required>
+             </div>
+     
+             <br>
+    
+             <div>
+                 <label for="E-Mail">E-Mail:</label>
+                 <input type="email" id="E-Mail" name="E-Mail" placeholder="E-Mail">
+             </div>
+     
+             <br>
+     
+     
+             <div>
+                 <label for="Age">Age:</label>
+                 <input type="number" id="Age" name="Age" min="0" max="99" value="1">
+             </div>
+             
+             <br>
+     
+             <div>
+                 <label for="title">Gender:</label>
+     
+                 <label for="Male.">Male</label>
+                 <input type="radio" id="Male" name="title" value="Male">
+     
+                 <label for="Female">Female</label>
+                 <input type="radio" id="Female" name="title" value="Female">
+     
+             </div>
+             
+             <br>
+     
+             <div>
+                 <label for="payment">Course:</label>
+                 <select id="payment" name="payment">
+                     <option value="BSAIS">BSAIS</option>
+                     <option value="BSIT">BSIT</option>
+                     <option value="BSA">BSA</option>
+                     <option value="BSE">BSE</option>
+                     <option value="BSSW">BSSW</option>
+                     <option value="ABELS">ABELS</option>
+                     <option value="DHRS">DHRS</option>
+                 </select>
+             </div>
+             
+             <br>
+
+             <div>
+
+     
+             <div>
+                 <label for="Interest">Interest:</label><br>
+                 <input type="checkbox" id="Basketball" name="subscribe" min="0" max="99" value="Basketball">Basketball<br>
+                 <input type="checkbox" id="Badminton" name="subscribe" min="0" max="99" value="Badminton">Badminton<br>
+                 <input type="checkbox" id="Boxing" name="subscribe" min="0" max="99" value="Boxing">Boxing<br>
+                 <input type="checkbox" id="Baseball" name="subscribe" min="0" max="99" value="Baseball">Baseball<br>
+                 <input type="checkbox" id="Billiard" name="subscribe" min="0" max="99" value="Billiard">Billiard
+
+
+
+
+                </div>
+             
+             <br>
+     
+             <button type="submit">Enroll Now</button>
+            </fieldset>
+     
+         </form>
+     
+         <h3>Student List</h3>
+         <table border ="1">
+             <thead>
+                 <tr>
+                     <th>ID</th>
+                     <th>Name</th>
+                     <th>Email</th>
+                     <th>Age</th>
+                     <th>Sex</th>
+                     <th>Course</th>
+                     <th>Interests</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>1</td>
+                     <td>Sabrina Carpenter</td>
+                     <td>yogirlsavvie@gmail.com</td>
+                     <td>22</td>
+                     <td>Female</td>
+                     <td>BSIT</td>
+                     <td>Boxing</td>
+                 </tr>
+                 <tr>
+                     <td>2</td>
+                     <td>Laufey</td>
+                     <td>el@gmail.com</td>
+                     <td>19</td>
+                     <td>Female</td>
+                     <td>BSSW</td>
+                     <td>Badminton</td>
+                 </tr>
+                 <tr>
+                     <td>3</td>
+                     <td>Post Malone</td>
+                     <td>whiteposty@gmail.com</td>
+                     <td>24</td>
+                     <td>Male</td>
+                     <td>DHRS</td>
+                     <td>Boxing</td>
+                 </tr>
+                 <tr>
+                     <td>4</td>
+                     <td>Kendrick Lamar</td>
+                     <td>kdrick@gmail.com</td>
+                     <td>21</td>
+                     <td>Male</td>
+                     <td>BSPA</td>
+                     <td>Basketball,Billiards</td>
+                 </tr>
+                 <tr>
+                     <td>5</td>
+                     <td>Joji</td>
+                     <td>pinkguy@gmail.com</td>
+                     <td>26</td>
+                     <td>Male</td>
+                     <td>BSIT</td>
+                     <td>Baseball</td>
+                 </tr>
+             </tbody>
+         </table>
+     
+
+     </body>
+     </html>
+     
+     
+</html>
